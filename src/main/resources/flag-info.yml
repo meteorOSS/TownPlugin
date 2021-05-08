@@ -1,0 +1,162 @@
+bucket:
+  enable:
+    name: '&a放置液体'
+    id: BUCKET
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定玩家是否能在'
+      - '&e&o城镇内放置液体&3&o(岩浆/水)'
+      - ''
+      - '&f当前状态: &a开启'
+  disable:
+    name: '&a放置液体'
+    id: BUCKET
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定玩家是否能在'
+      - '&e&o城镇内放置液体&3&o(岩浆/水)'
+      - ''
+      - '&f当前状态: &c关闭'
+interactive:
+  enable:
+    name: '&a交互'
+    id: ANVIL
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定玩家是否能与'
+      - '&e&o城镇内&3&o特殊方块&e&o交互'
+      - ''
+      - '&f当前状态: &a开启'
+  disable:
+    name: '&c交互'
+    id: ANVIL
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定玩家是否能与'
+      - '&e&o城镇内&3&o特殊方块&e&o交互'
+      - ''
+      - '&f当前状态: &c关闭'
+water-flow:
+  enable:
+    name: '&a水流动'
+    id: WATER_BUCKET
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定水是否流动'
+      - ''
+      - '&f当前状态: &a开启'
+  disable:
+    name: '&c水流动'
+    id: WATER_BUCKET
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定水是否流动'
+      - ''
+      - '&f当前状态: &c关闭'
+build:
+  enable:
+    name: '&a建造权限'
+    id: STONE
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定玩家能否进行破坏,放置'
+      - ''
+      - '&f当前状态: &a开启'
+  disable:
+    name: '&c建造权限'
+    id: STONE
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定玩家能否进行破坏,放置'
+      - ''
+      - '&f当前状态: &c关闭'
+lava-flow:
+  enable:
+    name: '&a岩浆流动'
+    id: LAVA_BUCKET
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定岩浆是否流动'
+      - ''
+      - '&f当前状态: &a开启'
+  disable:
+    name: '&c岩浆流动'
+    id: LAVA_BUCKET
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定岩浆是否流动'
+      - ''
+      - '&f当前状态: &c关闭'
+player-move:
+  enable:
+    name: '&a玩家移动'
+    id: IRON_BOOTS
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定玩家是否'
+      - '&e&o能在城镇内移动'
+      - ''
+      - '&f当前状态: &a开启'
+  disable:
+    name: '&c玩家移动'
+    id: IRON_BOOTS
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定玩家是否'
+      - '&e&o能在城镇内移动'
+      - ''
+      - '&f当前状态: &c关闭'
+mob-spawner:
+  enable:
+    name: '&a刷怪'
+    id: BOW
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定城镇内'
+      - '&e&o是否生成&c敌对生物'
+      - ''
+      - '&f当前状态: &a开启'
+  disable:
+    name: '&c刷怪'
+    id: BOW
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定城镇内'
+      - '&e&o是否生成&c敌对生物'
+      - ''
+      - '&f当前状态: &c关闭'
+plant:
+  enable:
+    name: '&a农作物采集'
+    id: BOW
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定玩家是否能'
+      - '&e&o收取城镇内 &a农作物'
+      - ''
+      - '&f当前状态: &a开启'
+  disable:
+    name: '&a农作物采集'
+    id: BOW
+    data: 0
+    lore:
+      - ''
+      - '&e&o该权限决定玩家是否能'
+      - '&e&o收取城镇内 &a农作物'
+      - ''
+      - '&f当前状态: &c关闭'

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.meteor</groupId>
+    <artifactId>MeteorTown</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>MeteorTown</name>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <createDependencyReducedPom>false</createDependencyReducedPom>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>spigotmc-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>sonatype</id>
+            <url>https://oss.sonatype.org/content/groups/public/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>meteorlib</groupId>
+            <artifactId>meteor-api</artifactId>
+            <version>1.12.2</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/lib/[前置]MeteorLib-1.0-SNAPSHOT.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>worldedit</groupId>
+            <artifactId>we-api</artifactId>
+            <version>1.12.2</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/lib/[创世神] worldedit.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>spigotcore</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>1.12.2</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/lib/spigot-1.12.2-R0.1-SNAPSHOT-b1602.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>papi</groupId>
+            <artifactId>papi-api</artifactId>
+            <version>1.12.2</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/lib/[变量]PlaceholderAPI.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>tlib</groupId>
+            <artifactId>tlib-api</artifactId>
+            <version>1.12.2</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/lib/TabooLib.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>vaut</groupId>
+            <artifactId>vault-api</artifactId>
+            <version>1.12.2</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/lib/[前置]Vault-1.6.6.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>points</groupId>
+            <artifactId>points-api</artifactId>
+            <version>1.12.2</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/lib/[点卷]PlayerPoints.jar</systemPath>
+        </dependency>
+    </dependencies>
+</project>

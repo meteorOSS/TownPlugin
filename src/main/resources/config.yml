@@ -1,0 +1,74 @@
+##author meteor //qq2260483272 插件定制接单..
+##papi变量:
+#%mtown_name% 城镇名
+#%mtown_size% 大小
+Setting:
+  protect:
+    x: 30
+    y: 30
+    z: 30
+  effect:
+    type: 'CLOUD'
+    amount: 150
+    speed: 0
+    time: 5
+  allow-break:
+    - 'GRASS'
+  place-delay: 20
+  cleam-block:
+    - 'STONE'
+    - 'GRASS'
+  #物品检测名
+  item:
+    rname: '&a城镇改名卡'
+    up: '&a城镇升级卡'
+  #传送回城镇耗时
+  tp-time: 5
+  #自动保存数据间隔（异步操作
+  auto-save-time: 1
+  #sc原理图文件名,存于sc文件夹中
+  we-sc: 'chushi'
+  #交互方块名称
+  intera-block:
+    - 'ANVIL'
+    - 'SKULL'
+    - 'CHEST'
+  #启用世界
+  enable-world:
+    - 'world'
+  #升级大小上限
+  up-max:
+    x: 60
+    y: 35
+    z: 60
+black-flag:
+  - 'nmsl'
+#升级权限组,default为默认，不可删除
+#权限mtown.up.*
+up-size:
+  default:
+    x: 45
+    y: 100
+    z: 45
+    type: MONEY
+    vaul: 100
+    items:
+      STONE:
+        amount: 10
+        name: '石头'
+        data: 0
+      GRASS:
+        amount: 10
+        name: '草方块'
+        data: 0
+#认领领地大小权限组，默认default,不可删
+# 例: mtown.group.vip
+group:
+  default:
+    x: 50
+    y: 50
+    z: 50
+  vip:
+    x: 150
+    y: 250
+    z: 150

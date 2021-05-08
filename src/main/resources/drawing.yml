@@ -1,0 +1,6 @@
+jishe:
+  name: '&a鸡舍'
+  sc: 'jishe'
+  radius: 15
+  cmds:
+    - 'give @p@ stone 1'

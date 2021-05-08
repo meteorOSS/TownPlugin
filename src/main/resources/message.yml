@@ -1,0 +1,144 @@
+prefix: '&f[&a城镇&f]'
+help:
+  player:
+    - '&a&lMeteorTown &f&l|HELP'
+    - '&c/mtown cleam &7声明脚下为你的城镇'
+    - '&c/mtown members &7城镇成员权限管理'
+    - '&c/mtown perm &7全局权限管理'
+    - '&c/mtown up &7升级城镇大小'
+    - '&c/mtown home &7回到城镇'
+    - '&c/mtown rname [name] &7为城镇更改新名字'
+    - '&c/mtown sethome &7重设传送点'
+    - '&c/mtown range &7显示脚下城镇范围'
+  admin:
+    - ''
+    - '&c/mtown reload &e重载配置文件'
+title:
+  member-list: '&f成员列表'
+  addmember-list: '&f添加成员'
+  create-town: '&a是否需要创建原理图'
+  admin-member: '&f成员权限管理 - &9&l@m@'
+  level-up: '&f升级城镇'
+  admin-perm: '&f权限管理 - &9&l全局'
+item:
+  no-paste:
+    id: 'STAINED_GLASS_PANE'
+    data: 12
+    name: '&a不创建城镇模板'
+    lore:
+      - ''
+      - '&7一切将从你手中诞生'
+      - ''
+  paste:
+    id: 'STAINED_GLASS_PANE'
+    data: 5
+    name: '&a创建城镇模板'
+    lore:
+      - ''
+      - '&7将为你创建城镇模板'
+      - ''
+  upMax:
+    id: 'STONE'
+    data: 0
+    name: '&c已到达升级上限'
+    lore: []
+  levelUp:
+    id: 'STONE'
+    data: 0
+    name: '&a升级城镇'
+    lore:
+      - ''
+      - '&7x升级: &3@cx@ &c -> &e@lx@'
+      - '&7y升级: &3@cy@ &c -> &e@ly@'
+      - '&7z升级: &3@cz@ &c -> &e@lz@'
+      - ''
+      - '&7花费货币 - &e@type@'
+      - '&7花费货币数 - &e@v@'
+      - '&7花费物资数:'
+      - '@items@'
+  next:
+    id: 'STAINED_GLASS_PANE'
+    data: 5
+    name: '&f翻页&f[&a下一页&f]'
+    lore: []
+  pre:
+    id: 'STAINED_GLASS_PANE'
+    data: 5
+    name: '&f翻页&f[&a上一页&f]'
+    lore: []
+  addMember:
+    id: 'STAINED_GLASS_PANE'
+    data: 5
+    name: '&a添加成员'
+    lore: []
+  back:
+    id: 'STAINED_GLASS_PANE'
+    data: 5
+    name: '&a返回上一页'
+    lore: []
+  flag:
+    id: 'STAINED_GLASS_PANE'
+    data: 0
+    name: '&f&l'
+    lore: []
+  member:
+    name: '&a@member@'
+    lore:
+      - ''
+      - '&f当前状态: @online@'
+      - ''
+      - '&7左键分配权限|&c右键移出列表'
+  memberAdd:
+    name: '&a@member@'
+    lore:
+      - ''
+      - '&7左键移入成员列表'
+message:
+  cleam-sur: '@prefix@ &7已成功声明城镇...'
+  no-town: '@prefix@ &7请站在城镇上进行操作'
+  no-dir: '@prefix@ &7航向错误,请尽量面朝东南西北！'
+  impact-town: '@prefix@ &7发生区域碰撞，无法完成声明！'
+  no-owner: '@prefix@ &7你不是该城镇的主人！'
+  no-cleam-break: '@prefix@ &7该领地未声明,无法破坏'
+  disable-world: '@prefix@ &7该世界未开启城镇声明'
+  kick-member: '@prefix@ &7已将&c@m@&7移出成员列表'
+  no-break-flag: '@prefix@ &7请得到城镇主人&e@owner@&7的建造(build)许可'
+  no-use-buck: '@prefix@ &7请得到城镇主人&e@owner@&7的使用液体(use-buck)许可'
+  no-interactive-flag: '@prefix@ &7请得到城镇主人&e@owner@&7的交互(interac)许可'
+  no-move-flag: '@prefix@ &7请得到城镇主人&e@owner@&7的移动(move)许可'
+  amount-limit: '@prefix@ &7你已到达城镇声明上限.'
+  start-page: '@prefix@ &7这已经是第一页了！'
+  end-page: '@prefix@ &7没有下一页了！'
+  no-block: '@prefix@ &7无法在该位置声明城镇'
+  no-points: '@prefix@ &7金币或物资不足,你需要 &e@v@ &a@type@ &7和物资 &e@item@ &ax@amount@'
+  up-sur: '@prefix@ &7成功升级城镇！'
+  reload: '@prefix@ &c已重载配置文件^^'
+  no-town-place: '@prefix@ &c范围不足或不在城镇内..'
+  no-town-owner: '@prefix@ &c仅城镇主人可使用图纸'
+  sethome: '@prefix@ &7已设置新的传送点位置为 &e@loc@'
+  no-cleam-town: '@prefix@ &c你还没有建立(声明)城镇!'
+  use-drawing: '@prefix@ &f成功使用图纸 &a@dr@'
+  wait-place: '@prefix@ &f20秒内&c蹲下并移动&f将取消放置,并归还图纸'
+  cancel-drawing: '@prefix@ &f已取消放置图纸'
+  break-no-cleam: '@perefix@ &f无法破坏未认领的方块'
+  rname-sur: '@prefix@ &7已将城镇名更改为 &e@dname@'
+  req-item: '@prefix@ &7你需要一张 @item@'
+  item-req: '&a@i@ &7&ox @a@'
+  no-req-item: '@prefix@ &c没有足够的物资！'
+  enter-town:
+    field: '&a野外'
+    title: '&f你进入了'
+    subtitle: '@town@'
+  place-build:
+    title: '&a你还有&c@s@&a秒'
+    subtitle: '&c来清理所示区域内方块'
+  cleam-title:
+    title: '&f新的开始'
+    subtitle: '&a我的物语'
+  back-home:
+    title: '&b传送将在五秒后开始'
+    subtitle: '&c请不要移动！'
+    mes: '@prefix@ &7已回到城镇'
+    cancel:
+      title: '&c已取消回城'
+      subtitle: '&f下次请不要乱动'

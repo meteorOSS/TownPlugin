@@ -1,0 +1,13 @@
+name: MeteorTown
+version: ${project.version}
+main: com.meteor.meteortown.MeteorTown
+depend:
+  - WorldEdit
+  - MeteorLib
+  - Vault
+  - PlayerPoints
+  - PlaceholderAPI
+authors: [meteor]
+commands:
+  mtown:
+  build:
